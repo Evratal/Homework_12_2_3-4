@@ -15,3 +15,7 @@ class TestSlice(unittest.TestCase):
         self.assertEqual(my_slice([1, 2, 3], 1, ), [2, 3])
         self.assertEqual(my_slice([1, 2, 3]), [1, 2, 3])
         self.assertEqual(my_slice([]), [])
+        self.assertEqual(my_slice([1, 2, 3, 4], -3, -1), [2, 3])
+        self.assertEqual(my_slice([1, 2, 3, 4], -6, -1), [1, 2, 3])
+        self.assertEqual(my_slice([1, 2, 3, 4], 0,5), [1, 2, 3, 4])
+
